@@ -23,7 +23,6 @@ class SW_8931_Á¦·Î {
 	            }
 	            while(!s.empty()) answer += s.pop();
 	            System.out.println("#" + test_case+" " + answer);
-	        }
-	    }
+	  }
 	}
 }
