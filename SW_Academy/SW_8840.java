@@ -8,7 +8,7 @@ public class SW_8840 {
         for (int test_case = 1; test_case <= T; test_case++) {
             long L = Long.parseLong(in.readLine());
             long num = (L / 2) * 1L;
-            System.out.println("#" + t + " " + num * num);
+            System.out.println("#" + test_case + " " + num * num);
         }
     }
 }

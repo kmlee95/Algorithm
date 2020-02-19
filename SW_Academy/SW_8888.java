@@ -1,4 +1,3 @@
-package SW_Academy;
 import java.util.Scanner;
 
 class SW_8888{

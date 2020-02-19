@@ -1,4 +1,3 @@
-package SW_Academy;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -6,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-public class SW_9088_´ÙÀÌ¾Æ¸óµå {
+public class SW_9088_ë‹¤ì´ì•„ëª¬ë“œ{
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     static void solve(int num) throws IOException {
         int n, k;

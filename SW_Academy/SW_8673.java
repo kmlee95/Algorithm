@@ -1,14 +1,13 @@
-package SW_Academy;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class SW_8673 {
 	public static void main(String args[]) throws Exception{
 		Scanner sc = new Scanner(System.in);
-		int T; // Å×½ºÆ® ÄÉÀÌ½º ¼ö
-		int k; // k¹ø °æ±â ¼ö
-		int s; // ÄÚµù½Ç·Â 
-		int result; // °á°ú
+		int T; // ï¿½×½ï¿½Æ® ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½
+		int k; // kï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½
+		int s; // ï¿½Úµï¿½ï¿½Ç·ï¿½ 
+		int result; // ï¿½ï¿½ï¿½
 		int a,b;
 		int people;
 		T=sc.nextInt(); 

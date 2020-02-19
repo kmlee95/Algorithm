@@ -1,12 +1,8 @@
-package SW_Academy;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.StringTokenizer;
 
-public class SW_9317_¹Þ¾Æ¾²±â {
+public class SW_9317_ë°›ì•„ì“°ê¸°{
 	public static void main(String[] args) throws IOException {
 		BufferedReader r= new BufferedReader(new InputStreamReader(System.in)); 
 		int T = Integer.parseInt(r.readLine());

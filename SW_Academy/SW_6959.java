@@ -1,5 +1,3 @@
-package SW_Academy;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 

@@ -1,4 +1,3 @@
-package SW_Academy;
 import java.io.*;
 import java.util.*;
 
@@ -11,7 +10,7 @@ public class SW_1220 {
         {
             int s = Integer.parseInt(r.readLine());
             int[][] data = new int[s][s]; //sample
-            int sum = 0; //n, s±Ø ±³Â÷
+            int sum = 0; //n, sï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             StringTokenizer t;
              
             for(int i = 0; i < s; i++) {
