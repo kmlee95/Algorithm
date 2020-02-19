@@ -5,7 +5,7 @@ public class SW_8673 {
 	public static void main(String args[]) throws Exception{
 		Scanner sc = new Scanner(System.in);
 		int T; // 
-		int k; // k�� ��� ��
+		int k; // 
 		int s; // �ڵ��Ƿ� 
 		int result; // ���
 		int a,b;
