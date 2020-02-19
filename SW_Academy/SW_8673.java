@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class SW_8673 {
 	public static void main(String args[]) throws Exception{
 		Scanner sc = new Scanner(System.in);
-		int T; // �׽�Ʈ ���̽� ��
+		int T; // 
 		int k; // k�� ��� ��
 		int s; // �ڵ��Ƿ� 
 		int result; // ���
