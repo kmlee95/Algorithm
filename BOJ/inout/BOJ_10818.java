@@ -6,17 +6,16 @@ public class BOJ_10818 {
         try {
             int test = Integer.parseInt(br.readLine());
             String[] arrayList = br.readLine().split(" ");
-            String temp;
-            for(int i = 0; i < test-1; i++){
-                if( Integer.parseInt(arrayList[i]) > Integer.parseInt(arrayList[i+1]) ){
-                    temp = arrayList[i+1];
-                    arrayList[i+1] = arrayList[i];
-                    arrayList[i] = temp;
-                }
+
+            int max = Integer.parseInt(arrayList[0]);
+            int min = Integer.parseInt(arrayList[0]);
+            for(int i=0; i<test; i++){
+                if(max < Integer.parseInt(arrayList[i])) max = Integer.parseInt(arrayList[i]);
+                if(min > Integer.parseInt(arrayList[i])) min = Integer.parseInt(arrayList[i]);
             }
-            System.out.println(arrayList[0] + " " + arrayList[test-1]);
+
+            System.out.println(min + " " + max);
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
