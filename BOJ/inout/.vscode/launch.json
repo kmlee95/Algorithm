@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - BOJ_2522",
+            "request": "launch",
+            "mainClass": "BOJ_2522",
+            "projectName": "inout_9edeb5f9"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BOJ_2445",
+            "request": "launch",
+            "mainClass": "BOJ_2445",
+            "projectName": "inout_9edeb5f9"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - BOJ_2442",
             "request": "launch",
             "mainClass": "BOJ_2442",
