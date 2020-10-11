@@ -1,3 +1,4 @@
+//소수찾기
 public class challenge8 {
     public static int solution(int n) {
         int answer = 0;
