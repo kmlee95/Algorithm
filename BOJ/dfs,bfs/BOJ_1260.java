@@ -23,6 +23,11 @@ public class BOJ_1260 {
             checkNode[x][y] = checkNode[y][x] = 1;
         }
         dfs(V); // dfs start
+
+        check = new boolean[1001];
+        System.out.println();
+
+        bfs(V); // bfd start
     }
 
     public static void dfs(int i) {
@@ -36,6 +41,22 @@ public class BOJ_1260 {
     }
 
     public static void bfs(int i) {
+        Queue<Integer> q = new LinkedList<>();
+        q.offer(i);
 
+        check[i] = true;
+        System.out.print(i + " ");
+
+        while (!q.isEmpty()) {
+            int temp = q.poll();
+
+            for (int j = 1; j <= N; j++) {
+                if (checkNode[temp][j] == 1 && check[j] == false) {
+                    q.offer(j);
+                    check[j] = true;
+                    System.out.print(j + " ");
+                }
+            }
+        }
     }
 }
