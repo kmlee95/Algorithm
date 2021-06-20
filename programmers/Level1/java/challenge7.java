@@ -1,3 +1,5 @@
+package java;
+
 //p와 Y
 public class challenge7 {
     public static boolean solution(String n) {

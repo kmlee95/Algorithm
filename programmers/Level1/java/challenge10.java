@@ -1,3 +1,5 @@
+package java;
+
 public class challenge10 {
     public static String solution(String s, int n) {
         String answer = "";

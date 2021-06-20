@@ -1,3 +1,5 @@
+package java;
+
 //수박수박수박수?
 public class challenge6 {
     public static String solution(int n) {

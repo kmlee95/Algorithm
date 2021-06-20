@@ -1,3 +1,5 @@
+package java;
+
 import java.util.Arrays;
 
 // k번째 수

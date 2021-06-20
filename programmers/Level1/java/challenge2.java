@@ -1,3 +1,5 @@
+package java;
+
 import java.util.Arrays;
 
 //완주하지 못한 선수

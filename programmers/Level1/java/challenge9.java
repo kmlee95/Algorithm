@@ -1,3 +1,5 @@
+package java;
+
 public class challenge9 {
     public static int solution(String s) {
         int answer = 0;
