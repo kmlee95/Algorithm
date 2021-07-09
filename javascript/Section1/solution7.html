@@ -1,13 +1,13 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>출력결과</title>
+        <title>10부제</title>
     </head>
     <body>
         <script>
             function solution(day, arr){
                 let answer=0;
-
+                answer = arr.filter(s => s%10 === day).length;
                 return answer;
             }
             
