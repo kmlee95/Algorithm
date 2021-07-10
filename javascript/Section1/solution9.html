@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>A를 #으로</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){
+                let answer="";
+                for(var i of s){
+                  if(i === "A"){
+                    answer +="#"
+                  }else{
+                    answer += i;
+                  }
+                }
+                return answer;
+            }
+            
+            let str="BANANA";
+            console.log(solution(str));
+        </script>
+    </body>
+</html>
