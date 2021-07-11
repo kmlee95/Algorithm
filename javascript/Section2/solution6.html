@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>격자판 최대합</title>
+    </head>
+    <body>
+        <script>
+            function solution(arr){  
+                let answer=Number.MIN_SAFE_INTEGER;
+                let a = 0;
+                let b = 0;
+                let c = 0;
+                for(let i = 0; i< arr.length; i++){
+                    a=b=0;
+                    for(let j = 0; j<arr.length; j++){
+                        a += arr[i][j];
+                        b += arr[j][i];
+                    }
+                    answer = Math.max(answer, a, b);
+                }
+
+                a=b=0;
+                for(let i =0; i< arr.length; i++){
+                    a+= arr[i][i];
+                    b+= arr[i][arr.length-i-1];
+                }
+                answer=Math.max(answer, a, b);
+                return answer;
+            }
+
+            let arr=[[10, 13, 10, 12, 15], 
+                     [12, 39, 30, 23, 11],
+                     [11, 25, 50, 53, 15],
+                     [19, 27, 29, 37, 27],
+                     [19, 13, 30, 13, 19]];
+            console.log(solution(arr));
+        </script>
+    </body>
+</html>
