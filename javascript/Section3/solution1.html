@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>최문문자열</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){
+                let answer="YES";
+                s = s.toLowerCase();
+
+                if(s.split('').reverse().join('') !== s){
+                    answer = "NO";
+                }
+
+                return answer;
+            }
+            
+            let str="goooG";
+            console.log(solution(str));
+        </script>
+    </body>
+</html>
+

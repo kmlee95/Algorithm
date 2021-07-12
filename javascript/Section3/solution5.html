@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>문자열 압축</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){
+                let answer=[];
+                let count = 1;
+
+                s = s + " ";
+                s = s.split('');
+
+                for(let i = 0; i < s.length-1; i++){
+                    if(s[i] != s[i+1]){
+                        if(count == 1) answer.push(s[i]);
+                        else{
+                            answer.push(s[i]);
+                            answer.push(count);
+                            count = 1;
+                        }
+                    }else{
+                        count++;
+                    }
+                }
+                answer = answer.join("");
+
+                return answer;
+            }
+            
+            let str="KKHSSSSSSSE";
+            console.log(solution(str));
+        </script>
+    </body>
+</html>
