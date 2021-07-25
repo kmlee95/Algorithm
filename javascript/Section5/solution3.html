@@ -1,13 +1,22 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>출력결과</title>
+        <title>연속부분수열</title>
     </head>
     <body>
         <script>
+            //two pointer algorithm
             function solution(m, arr){
-                let answer=0;
-   
+                let answer=0, lt=0, sum=0;
+                for(let rt=0; rt<arr.length; rt++){
+                    sum+=arr[rt];
+                    if(sum === m) answer++;
+                    while(sum>=m){
+                        sum-=arr[lt++];
+                        if(sum===m) answer++;
+                    }
+                }
+
                 return answer;
             }
             
