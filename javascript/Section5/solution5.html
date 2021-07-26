@@ -1,12 +1,21 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>출력결과</title>
+        <title>최대매출</title>
     </head>
     <body>
         <script>
             function solution(k, arr){
-                let answer;
+                let answer=0, lt=0;
+                let sum = 0;
+                for(let rt = k-1; rt < arr.length; rt++){
+                    for(let a = lt; a <= rt; a++){
+                        sum+= arr[a];
+                    }
+                    answer = Math.max(answer, sum);
+                    sum = 0;
+                    lt++;
+                }
                  
                 return answer;
             }
