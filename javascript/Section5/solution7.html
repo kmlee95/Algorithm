@@ -1,13 +1,29 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>출력결과</title>
+        <title>아나그램</title>
     </head>
     <body>
         <script>
             function solution(str1, str2){
                 let answer="YES"; 
+                let check1 = new Map();
+                let check2 = new Map();
 
+                for(let a of str1){
+                    if(check1.has(a)) check1.set(a, check1.get(a)+1)
+                    else check1.set(a, 1);
+                }
+                for(let b of str2){
+                    if(check2.has(b)) check2.set(b, check2.get(b)+1)
+                    else check2.set(b, 1);
+                }
+
+                check1.forEach((value, key) => {
+                    if(!check2.has(key) || check2.get(key) !== value){
+                        answer = "NO";
+                    }
+                });
                 return answer;
             }
             
